@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+  redis:
+    database: 1
+    password: 123456
+    host: 192.168.0.107
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  file:
+    name: common.log
+    path: D:/javaProject/springboot-middle/boot-redis
